@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 # encofing: utf-8
+# This software is released under the MIT License
+# see http://opensource.org/licenses/mit-license.php
+# Copyright (c) 2015 Zoar
 
 require 'json'
 require 'kconv'
