@@ -2,20 +2,19 @@
 
 SIMA ファイル(測量データ 共通フォーマット)を GeoJSON に変換します。
 
-現在はポイントデータのみの変換です。
+ポイントデータを `.point.geojson` に、画地データを `.polygon.geojson に出力します。
 
 ```
 # ./sima2geojson.rb %Path to SIMA File% %Number%
 ```
 
 `%Path to SIMA File%` には SIMA ファイルまでのパスを、 `%Number%` には平面直角座標系の系番号を入れて実行します。  
-SIMA ファイルの拡張子が `geojson` になったファイルが作成されると思います。
+SIMA ファイルの拡張子が `.point.geojson` になったファイルと `.polygon,json` になったファイルが作成されると思います。
 
-現在ポイントデータの変換しかできません。
+現在閉合していない画地データもポリゴンとしての変換しかできません。
 
 ## todo
 + 路線データを LineString に変換できるようにする
-+ 画地データを Polygon に変換できるようにする
 + 系番号が範囲外だった時の警告を付ける
 + 指定された SIMA ファイルの実在性をチェックする
 
