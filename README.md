@@ -15,7 +15,6 @@ SIMA ファイルの拡張子が `.point.geojson` になったファイルと `.polygon,json` にな
 
 ## todo
 + 路線データを LineString に変換できるようにする
-+ 系番号が範囲外だった時の警告を付ける
 + 指定された SIMA ファイルの実在性をチェックする
 
 This software is released under the MIT License, see http://opensource.org/licenses/mit-license.php
