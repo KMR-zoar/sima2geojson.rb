@@ -64,7 +64,9 @@ open(filename.gsub(".sim",".point.geojson"),"w") do |json|
    json.write(geojson)
 end
 
-geojson = JSON.generate("type"=> "FeatureCollection", "crs" => crs ,"features" => polygonstock)
-open(filename.gsub(".sim",".polygon.geojson"),"w") do |json|
-   json.write(geojson)
+unless polygonstock == []
+   geojson = JSON.generate("type"=> "FeatureCollection", "crs" => crs ,"features" => polygonstock)
+   open(filename.gsub(".sim",".polygon.geojson"),"w") do |json|
+      json.write(geojson)
+   end
 end
