@@ -4,6 +4,10 @@ SIMA ファイル(測量データ 共通フォーマット)を GeoJSON に変換します。
 
 ポイントデータを `.point.geojson` に、画地データを `.polygon.geojson に出力します。
 
+# 不具合について
+系の指定と properties の値などについて不具合がありますのでご注意ください。  
+近く修正します。
+
 ```
 # ./sima2geojson.rb %Path to SIMA File% %Number%
 ```
