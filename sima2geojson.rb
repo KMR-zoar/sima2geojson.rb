@@ -48,7 +48,6 @@ open(filename) do |sima|
          features = {"type" => "Feature", "properties" => properties, "geometry" => geometry}
          pointstock << features
          points["#{simaline[1]},#{simaline[2]}"] = coordinates
-         puts "#{simaline[1]},#{simaline[2]}"
       end
 
      if simaline[0] =~ /^D00/
