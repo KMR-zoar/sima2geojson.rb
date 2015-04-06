@@ -13,6 +13,7 @@ pointstock = []
 polygonstock = []
 points = {}
 coordinates = []
+properties = {}
 mode = 0
 
 unless File.exist?(filename)
