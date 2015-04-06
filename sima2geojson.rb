@@ -47,7 +47,8 @@ open(filename) do |sima|
          properties = {"Number" => simaline[1], "Name" => simaline[2]}
          features = {"type" => "Feature", "properties" => properties, "geometry" => geometry}
          pointstock << features
-         points["#{simaline[1]}#{simaline[2]}"] = coordinates
+         points["#{simaline[1]},#{simaline[2]}"] = coordinates
+         puts "#{simaline[1]},#{simaline[2]}"
       end
 
      if simaline[0] =~ /^D00/
@@ -64,7 +65,7 @@ open(filename) do |sima|
      end
 
      if simaline[0] =~ /^B01/
-        coordinates << points["#{simaline[1]}#{simaline[2]}"]
+        coordinates << points["#{simaline[1]},#{simaline[2]}"]
      end
    end
 end
